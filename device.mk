@@ -6,6 +6,7 @@
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/lavender/lavender-vendor.mk)
+$(call inherit-product-if-exists, vendor/google/launcher/config.mk)
 
 -include $(LOCAL_PATH)/vendor_prop.mk
 
